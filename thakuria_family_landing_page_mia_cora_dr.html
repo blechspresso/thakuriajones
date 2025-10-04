@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thakuria Family — Mia • Cora • Dr. Manisha</title>
+  <meta name="description" content="A polished, modern placeholder site celebrating Mia & Cora (volleyball) and Dr. Manisha Thakuria (dermatology)." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏐</text></svg>">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config for custom fonts & colors
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+            body: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
+          },
+          colors: {
+            ink: {
+              50: "#f6f7fb",
+              100: "#eceff7",
+              200: "#d8def0",
+              300: "#bac6e3",
+              400: "#8aa2cf",
+              500: "#5c7fba",
+              600: "#3f629f",
+              700: "#324e7f",
+              800: "#2a4168",
+              900: "#243757"
+            },
+            accent: {
+              300: "#ffd6a5",
+              400: "#ffb86b",
+              500: "#ff9f43",
+              600: "#ff7f11"
+            }
+          },
+          boxShadow: {
+            soft: "0 10px 30px -10px rgba(2, 8, 23, 0.25)",
+            glow: "0 0 0 6px rgba(255, 191, 105, 0.22)",
+          },
+          animation: {
+            float: "float 8s ease-in-out infinite",
+            fadein: "fadein 1s ease-out forwards",
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            fadein: {
+              '0%': { opacity: 0, transform: 'translateY(8px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Decorative gradient background with subtle animated blobs */
+    .bg-aurora {
+      background: radial-gradient(80rem 40rem at 10% -10%, rgba(255,159,67,.25), transparent 40%),
+                  radial-gradient(60rem 30rem at 90% 10%, rgba(92,127,186,.28), transparent 40%),
+                  radial-gradient(50rem 25rem at -10% 80%, rgba(255,127,17,.20), transparent 40%),
+                  linear-gradient(180deg, #0b1020 0%, #0e1324 60%, #0b1020 100%);
+    }
+    .glass {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .blob {
+      filter: blur(60px);
+      opacity: .45;
+    }
+    /* Placeholder image blocks */
+    .ph-img { background: linear-gradient(135deg, rgba(255,184,107,.35), rgba(92,127,186,.35)); }
+  </style>
+</head>
+<body class="font-body text-slate-100 bg-aurora antialiased selection:bg-accent-500/30">
+  <!-- Navigation -->
+  <header class="fixed inset-x-0 top-0 z-50">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-4 flex items-center justify-between rounded-2xl glass px-4 py-3 shadow-soft">
+        <a href="#home" class="flex items-center gap-2">
+          <span class="text-xl">🏐</span>
+          <span class="font-semibold tracking-wide">Thakuria Family</span>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#mia" class="hover:text-accent-400 transition">Mia</a>
+          <a href="#cora" class="hover:text-accent-400 transition">Cora</a>
+          <a href="#manisha" class="hover:text-accent-400 transition">Dr. Manisha</a>
+          <a href="#gallery" class="hover:text-accent-400 transition">Gallery</a>
+          <a href="#contact" class="hover:text-accent-400 transition">Contact</a>
+        </div>
+        <button id="themeBtn" class="md:ml-6 rounded-xl border border-white/10 px-3 py-1.5 text-sm hover:shadow-glow transition">Toggle Theme</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden pt-28 sm:pt-32">
+    <div class="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-accent-500/20 blob animate-float"></div>
+    <div class="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-ink-500/30 blob animate-float" style="animation-delay: -2s"></div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div class="space-y-6 animate-fadein">
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight">
+            Celebrating <span class="text-accent-400">Mia</span>, <span class="text-accent-400">Cora</span> &<br>
+            <span class="text-ink-200">Dr. Manisha Thakuria</span>
+          </h1>
+          <p class="text-slate-300/90 text-lg leading-relaxed max-w-prose">
+            A modern family hub for two rising volleyball stars and a renowned academic dermatologist. This is a stylish placeholder — sleek, simple, and ready to grow with bios, highlights, publications, and more.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#mia" class="rounded-xl bg-white/10 hover:bg-white/20 px-4 py-2 text-sm font-semibold transition">Meet Mia</a>
+            <a href="#cora" class="rounded-xl bg-white/10 hover:bg-white/20 px-4 py-2 text-sm font-semibold transition">Meet Cora</a>
+            <a href="#manisha" class="rounded-xl bg-accent-500/20 hover:bg-accent-500/30 px-4 py-2 text-sm font-semibold transition">About Dr. Thakuria</a>
+          </div>
+        </div>
+        <div class="glass rounded-3xl p-4 sm:p-6 shadow-soft">
+          <div class="aspect-[4/3] w-full rounded-2xl ph-img"></div>
+          <div class="mt-4 grid grid-cols-3 gap-3">
+            <div class="aspect-square rounded-xl ph-img"></div>
+            <div class="aspect-square rounded-xl ph-img"></div>
+            <div class="aspect-square rounded-xl ph-img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Cards -->
+  <section class="mt-20 sm:mt-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- Mia Card -->
+        <a href="#mia" class="group glass rounded-3xl p-6 shadow-soft transition hover:shadow-glow">
+          <div class="aspect-video rounded-2xl ph-img"></div>
+          <h3 class="mt-5 text-xl font-semibold tracking-wide">Mia — Outside Hitter</h3>
+          <p class="mt-2 text-slate-300/90 text-sm leading-relaxed">Quick off the approach, big vertical, and a clutch server. Explore highlight reels, club seasons, and upcoming tournaments.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-accent-400 text-sm">See Mia’s section
+            <svg class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+        <!-- Cora Card -->
+        <a href="#cora" class="group glass rounded-3xl p-6 shadow-soft transition hover:shadow-glow">
+          <div class="aspect-video rounded-2xl ph-img"></div>
+          <h3 class="mt-5 text-xl font-semibold tracking-wide">Cora — Libero / DS</h3>
+          <p class="mt-2 text-slate-300/90 text-sm leading-relaxed">Lightning-fast reads, fearless digs, and pinpoint passing. Track match stats, training plans, and college prep.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-accent-400 text-sm">See Cora’s section
+            <svg class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+        <!-- Manisha Card -->
+        <a href="#manisha" class="group glass rounded-3xl p-6 shadow-soft transition hover:shadow-glow">
+          <div class="aspect-video rounded-2xl ph-img"></div>
+          <h3 class="mt-5 text-xl font-semibold tracking-wide">Dr. Manisha Thakuria — Dermatology</h3>
+          <p class="mt-2 text-slate-300/90 text-sm leading-relaxed">Academic dermatologist focused on skin cancer and complex medical dermatology. Browse publications, talks, and media.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-accent-400 text-sm">See profile
+            <svg class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mia Section -->
+  <section id="mia" class="mt-24 scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div class="glass rounded-3xl p-6 shadow-soft">
+          <div class="aspect-[4/3] rounded-2xl ph-img"></div>
+        </div>
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold">Mia — Outside Hitter</h2>
+          <p class="mt-4 text-slate-300/90 leading-relaxed">Explosive approach, heavy arm swing, and versatile shot selection. Fictional highlight metrics: 9'3" approach touch, 35" vertical, 45 mph serve. Passionate about teamwork and growth.</p>
+          <ul class="mt-6 grid gap-3 sm:grid-cols-2 text-sm">
+            <li class="glass rounded-xl p-3">🏐 Club: <span class="text-slate-200">SMASH Elite</span></li>
+            <li class="glass rounded-xl p-3">📍 Position: <span class="text-slate-200">OH / OPP</span></li>
+            <li class="glass rounded-xl p-3">🎯 Interests: <span class="text-slate-200">STEM, design</span></li>
+            <li class="glass rounded-xl p-3">🎓 Goal: <span class="text-slate-200">College volleyball</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cora Section -->
+  <section id="cora" class="mt-24 scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div class="order-2 lg:order-1">
+          <h2 class="text-3xl sm:text-4xl font-extrabold">Cora — Libero / DS</h2>
+          <p class="mt-4 text-slate-300/90 leading-relaxed">Agile, vocal, and fierce on defense. Fictional metrics: 2.35 pass rating, 4.9 digs/set, serve-receive heat map trending hot. Loves strategy and team culture.</p>
+          <ul class="mt-6 grid gap-3 sm:grid-cols-2 text-sm">
+            <li class="glass rounded-xl p-3">🏐 Club: <span class="text-slate-200">SMASH Select</span></li>
+            <li class="glass rounded-xl p-3">📍 Position: <span class="text-slate-200">Libero / DS</span></li>
+            <li class="glass rounded-xl p-3">📚 Interests: <span class="text-slate-200">Writing, film</span></li>
+            <li class="glass rounded-xl p-3">🎯 Goal: <span class="text-slate-200">Leadership & growth</span></li>
+          </ul>
+        </div>
+        <div class="order-1 lg:order-2 glass rounded-3xl p-6 shadow-soft">
+          <div class="aspect-[4/3] rounded-2xl ph-img"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manisha Section -->
+  <section id="manisha" class="mt-24 scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div class="glass rounded-3xl p-6 shadow-soft">
+          <div class="aspect-[4/3] rounded-2xl ph-img"></div>
+        </div>
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold">Dr. Manisha Thakuria</h2>
+          <p class="mt-4 text-slate-300/90 leading-relaxed">Renowned academic dermatologist (placeholder bio). Interests include Merkel cell carcinoma research, complex dermatology, and teaching. This section can expand to include publications, media features, and upcoming talks.</p>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2 text-sm">
+            <div class="glass rounded-xl p-3">🏥 Affiliation: <span class="text-slate-200">Teaching Hospital</span></div>
+            <div class="glass rounded-xl p-3">🔬 Focus: <span class="text-slate-200">Skin cancer, complex derm</span></div>
+            <div class="glass rounded-xl p-3">📝 Publications: <span class="text-slate-200">Peer‑reviewed (TBD)</span></div>
+            <div class="glass rounded-xl p-3">🎤 Talks: <span class="text-slate-200">Invited lectures (TBD)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="mt-24 scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between">
+        <h2 class="text-3xl sm:text-4xl font-extrabold">Gallery</h2>
+        <span class="text-sm text-slate-300/80">All images are placeholders</span>
+      </div>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="aspect-[3/2] rounded-2xl ph-img"></div>
+        <div class="aspect-[3/2] rounded-2xl ph-img"></div>
+        <div class="aspect-[3/2] rounded-2xl ph-img"></div>
+        <div class="aspect-[3/2] rounded-2xl ph-img"></div>
+        <div class="aspect-[3/2] rounded-2xl ph-img"></div>
+        <div class="aspect-[3/2] rounded-2xl ph-img"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mt-24 mb-28 scroll-mt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="glass rounded-3xl p-8 shadow-soft">
+        <div class="grid gap-8 md:grid-cols-2">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold">Get in touch</h2>
+            <p class="mt-4 text-slate-300/90">Use this placeholder section for recruiting, collaborations, or speaking invitations. Replace with real links later.</p>
+            <ul class="mt-6 space-y-3 text-sm">
+              <li>📧 Email: <a class="underline decoration-accent-500/60 underline-offset-4 hover:text-accent-400" href="mailto:hello@example.com">hello@example.com</a></li>
+              <li>📷 Instagram: <a class="underline decoration-accent-500/60 underline-offset-4 hover:text-accent-400" href="#">@mia_cora_vb</a></li>
+              <li>🔗 LinkedIn: <a class="underline decoration-accent-500/60 underline-offset-4 hover:text-accent-400" href="#">/in/manisha‑thakuria</a></li>
+            </ul>
+          </div>
+          <form class="glass rounded-2xl p-4">
+            <div class="grid gap-4">
+              <input class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 outline-none focus:ring-2 focus:ring-accent-500/40" placeholder="Your name" />
+              <input type="email" class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 outline-none focus:ring-2 focus:ring-accent-500/40" placeholder="Email" />
+              <textarea class="min-h-[120px] w-full rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 outline-none focus:ring-2 focus:ring-accent-500/40" placeholder="Message"></textarea>
+              <button type="button" class="rounded-xl bg-accent-500/30 px-4 py-2.5 font-semibold hover:bg-accent-500/40">Send (placeholder)</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pb-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-400">
+      © <span id="year"></span> Thakuria Family — Placeholder site. Designed with ❤️.
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple theme toggle (dark <-> light-ish)
+    const themeBtn = document.getElementById('themeBtn');
+    let light = false;
+    const makeLight = () => {
+      document.body.classList.add('bg-white');
+      document.body.classList.remove('bg-aurora');
+      document.body.classList.add('text-slate-800');
+      document.body.classList.remove('text-slate-100');
+      document.querySelectorAll('.glass').forEach(el => {
+        el.style.background = 'linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.02))';
+        el.style.borderColor = 'rgba(0,0,0,.08)';
+      });
+    }
+    const makeDark = () => {
+      document.body.classList.remove('bg-white');
+      document.body.classList.add('bg-aurora');
+      document.body.classList.remove('text-slate-800');
+      document.body.classList.add('text-slate-100');
+      document.querySelectorAll('.glass').forEach(el => {
+        el.style.background = 'linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04))';
+        el.style.borderColor = 'rgba(255,255,255,.12)';
+      });
+    }
+    themeBtn?.addEventListener('click', () => {
+      light = !light;
+      light ? makeLight() : makeDark();
+    });
+  </script>
+</body>
+</html>
